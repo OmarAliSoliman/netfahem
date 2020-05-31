@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  AOS.init();
   var swiper = new Swiper('.swiper-slider-card', {
     slidesPerView: 1,
     spaceBetween:0,
@@ -23,3 +24,13 @@ $(document).ready(function(){
     }
   });
 });
+
+var fileInput = document.querySelector('#file-input');
+var fileName = document.querySelector('#file-name');
+fileInput.addEventListener('change', ()=>{
+  var nameOfFile = fileInput.value.replace(/.*[\/\\]/, '');
+  fileName.textContent = nameOfFile;
+  console.log(fileInput.value);
+})
+
+

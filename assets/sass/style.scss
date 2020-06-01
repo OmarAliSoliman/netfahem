@@ -30,6 +30,12 @@ $mainGradientColor: linear-gradient(to left, #b52553, #761366);
       format("svg");
 }
 
+input, select, textarea{
+  &:focus{
+    outline: 0 !important;
+  }
+}
+
 body {
   direction: rtl;
   font-family: myFont;
@@ -324,9 +330,11 @@ body {
     margin-top: 80px;
     margin-bottom: 90px;
     .btn {
-      width: 800px;
+      width: 400px;
       margin: auto;
+      color: #fff;
       border: 1px solid #ddd;
+      background-color: #771365 !important;
     }
   }
 }
@@ -416,13 +424,23 @@ body {
         }
       }
     }
+    .descripe-add{
+      width: 80% !important;
+      margin: auto !important;
+      margin-top: 40px !important;
+      .descripe-ad-input{
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #e4e4e4 !important;
+      }
+    }
     .ad-details {
       width: 80%;
       margin: auto;
-      margin-top: 30px;
+      margin-top: 10px;
       textarea {
         width: 100%;
-        margin-top: 20px;
+        // margin-top: 20px;
         padding: 5px;
         border: 1px solid #e4e4e4;
       }
@@ -1208,6 +1226,9 @@ body {
 .verfication-div {
   margin-top: 20px;
   ul {
+    .fa-check-circle{
+      color: #339AF0;
+    }
     margin-top: 10px;
     li {
       &::before {
@@ -1362,7 +1383,7 @@ footer {
         margin-right: 15px;
         transition: all 0.5s ease;
         &:hover {
-          color: #073670;
+          color: $mainColor;
         }
       }
     }

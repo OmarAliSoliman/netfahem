@@ -10,6 +10,9 @@
   font-family: "DINNextLTArabic-Medium";
   src: url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.eot");
   src: url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.woff") format("woff"), url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.ttf") format("truetype"), url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.svg#DINNextLTArabic-Medium") format("svg"); }
+input:focus, select:focus, textarea:focus {
+  outline: 0 !important; }
+
 body {
   direction: rtl;
   font-family: myFont; }
@@ -236,9 +239,11 @@ body {
     margin-top: 80px;
     margin-bottom: 90px; }
     .ads .load-more .btn {
-      width: 800px;
+      width: 400px;
       margin: auto;
-      border: 1px solid #ddd; }
+      color: #fff;
+      border: 1px solid #ddd;
+      background-color: #771365 !important; }
 
 .path {
   text-align: right;
@@ -300,13 +305,20 @@ body {
         position: absolute;
         bottom: -50px;
         margin-right: 33px; }
+  .upload-ads form .descripe-add {
+    width: 80% !important;
+    margin: auto !important;
+    margin-top: 40px !important; }
+    .upload-ads form .descripe-add .descripe-ad-input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #e4e4e4 !important; }
   .upload-ads form .ad-details {
     width: 80%;
     margin: auto;
-    margin-top: 30px; }
+    margin-top: 10px; }
     .upload-ads form .ad-details textarea {
       width: 100%;
-      margin-top: 20px;
       padding: 5px;
       border: 1px solid #e4e4e4; }
     .upload-ads form .ad-details .form-select {
@@ -909,6 +921,8 @@ body {
   margin-top: 20px; }
   .verfication-div ul {
     margin-top: 10px; }
+    .verfication-div ul .fa-check-circle {
+      color: #339AF0; }
     .verfication-div ul li::before {
       content: "-";
       margin-left: 3px; }
@@ -1016,7 +1030,7 @@ footer {
       margin-right: 15px;
       transition: all 0.5s ease; }
       footer .social-content .social i:hover {
-        color: #073670; }
+        color: #d12d4a; }
     footer .social-content input {
       background-color: #fff;
       margin-top: 15px;

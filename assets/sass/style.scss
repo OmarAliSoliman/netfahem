@@ -1331,6 +1331,38 @@ body {
   }
 }
 
+
+.login-rigister {
+  text-align: right;
+  form {
+    .form-input {
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: 0;
+      border: 1px solid #ddd;
+    }
+    .remember {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      color: #fff;
+      width: 100px;
+    }
+    .btn-login {
+      background-color: #4f94e2;
+      border: 1px solid #4f94e2;
+      margin-bottom: 10px;
+    }
+    .btn-rigister {
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+    }
+  }
+}
+
 // =================================================
 // start department
 .department-card {

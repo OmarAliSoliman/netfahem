@@ -140,6 +140,21 @@ body {
       }
     }
   }
+  .eng{
+    border-right: 1px solid #ddd;
+    a{
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  .my-account-option{
+    border-right: 2px solid $mainColor !important;
+    width: 100%;
+    text-align: right;
+    .form-group{
+      margin-bottom: 0;
+    }
+  }
 }
 
 // start header img
@@ -620,7 +635,7 @@ body {
   .add-image {
     img {
       width: 100%;
-      height: 100%;
+      height: 400px;
     }
   }
   .add-information {
@@ -1440,6 +1455,242 @@ footer {
   }
 }
 
+
+// start add ads
+.add-ads-add {
+  margin-bottom: 80px;
+  form {
+    text-align: right;
+    margin-top: 60px;
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+    select {
+      background-color: transparent;
+      padding: 5px !important;
+      color: #444;
+      font-size: 14px;
+    }
+    input[type="file"] {
+      border: 0;
+      margin-top: 0;
+    }
+    .add-pic {
+      color: $mainColor;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    button[type="submit"] {
+      border: 1px solid $mainColor;
+      background-color: $mainColor;
+      color: #fff;
+      padding: 8px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.my-profile {
+  form {
+    margin-top: 0 !important;
+  }
+  h5 {
+    text-align: right;
+    margin-top: 60px;
+    color: $mainColor;
+    font-weight: bold;
+  }
+}
+
+// start my-ads
+.my-ads {
+  text-align: right;
+  margin-bottom: 150px;
+  .card {
+    border: 0;
+    margin-top: 50px !important;
+    img{
+      height: 200px;
+    }
+    .card-body {
+      background-color: #f7f6fa;
+      height: 100%;
+      padding: 0 !important;
+      position: relative;
+      h5 {
+        font-size: 18px;
+        color: #44474b;
+        padding: 20px;
+      }
+      span {
+        margin-left: 20px;
+        font-size: 13px;
+        color: $mainColor;
+        padding: 20px;
+        i {
+          font-size: 12px;
+          margin-left: 10px;
+          color: $mainColor;
+        }
+      }
+      .controls {
+        background-color: #efebf9;
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        line-height: 60px;
+        padding-right: 20px;
+        .button-controls {
+          background-color: $mainColor;
+          border: 1px solid $mainColor;
+          color: #fff;
+        }
+        .price {
+          position: absolute;
+          left: 3%;
+          top: 0%;
+          line-height: 60px;
+          font-size: 16px;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}
+
+
+// start edit ads
+.edit-ads {
+  text-align: right;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  form {
+    input,
+    select {
+      height: calc(2.5em + 0.75rem + 2px);
+    }
+    label {
+      color: $mainColor;
+      font-weight: bold;
+    }
+    select {
+      font-size: 14px;
+    }
+    input {
+      font-size: 14px;
+    }
+    .file-upload {
+      label {
+        margin-bottom: 0 !important;
+      }
+    }
+    .img-from-file {
+      img {
+        width: 20%;
+      }
+    }
+    button {
+      color: #fff;
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+      padding: 10px;
+    }
+  }
+}
+
+// start my-inbox
+.my-inbox {
+  text-align: right;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  .card {
+    margin-top: 20px;
+    .card-header {
+      background-color: $mainColor !important;
+      color: #fff;
+      font-size: 18px;
+    }
+    .card-body {
+      .card-title,
+      .card-text {
+        font-size: 15px;
+        i {
+          margin-left: 5px;
+          color: $mainColor;
+        }
+      }
+      .btn-danger {
+        font-size: 13px;
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+// start blacklist
+.blacklist {
+  text-align: right;
+  margin-top: 90px;
+  margin-bottom: 180px;
+  h5 {
+    color: $mainColor;
+    font-size: 25px;
+  }
+  p {
+    font-size: 15px;
+  }
+  form {
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    button {
+      margin-top: 15px;
+      width: 120px;
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+      color: #fff;
+      padding: 10px;
+    }
+  }
+}
+
+// start who-us
+.who-us {
+  margin-top: 80px;
+  margin-bottom: 90px;
+  text-align: right;
+  .who-header {
+    color: $mainColor;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  p {
+    color: #777;
+    .big-word {
+      color: $mainColor;
+      font-size: 23px;
+      font-weight: bold;
+    }
+    line-height: 40px;
+  }
+}
+
 @media (max-width: 1024px) {
   .search-bar {
     top: -6% !important;
@@ -1562,7 +1813,7 @@ footer {
     .my-ads-card {
       .card img {
         width: 100% !important;
-        height: 100% !important;
+        height: 300px !important;
       }
       .card .price {
         position: inherit;
@@ -1728,6 +1979,19 @@ footer {
         margin-top: 10px;
       }
     }
+  }
+  .my-ads .card .card-body h5 {
+    padding-bottom: 5px !important;
+  }
+  .my-ads .card .card-body .controls {
+    position: inherit;
+    margin-top: 10px;
+    height: 90px;
+  }
+  .my-ads .card .card-body .controls .price {
+    position: absolute;
+    left: 72%;
+    top: 44%;
   }
 }
 

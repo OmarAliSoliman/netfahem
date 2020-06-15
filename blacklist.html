@@ -34,6 +34,19 @@
                             <li class="eng">
                                 <a href="#">English</a>
                             </li>
+                            <li class="my-account-option">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">ابو مالك</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                    <option><a href="#">حسابي</a></option>
+                    <option><a href="#">رسائلي</a></option>
+                    <option><a href="#">اعلاناتي</a></option>
+                    <option><a href="#">تسجيل الخروج</a></option>
+                  </select>
+                                    </div>
+                                </form>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -57,66 +70,22 @@
     </div>
     <!-- end path -->
 
-    <!-- start uplad ads -->
-    <div class="upload-ads">
+    <div class="blacklist">
         <div class="container">
-            <form action="">
-                <div class="image-upload">
-                    <label class="file-upload" for="file-input">
-            <i class="fas fa-camera"></i>
-            <p id="file-name"></p>
-          </label><br />
-                    <input id="file-input" type="file" />
+            <h5>البحث في القائمة السوداء</h5>
+            <p>
+                القائمة السوداء هي قائمة بإرقام حسابات وأرقام جوالات من يقومون بإساءة إستخدام الموقع لأغراض ممنوعه مثل الغش أو الأحتيال أو مخالفة قوانين الموقع
+            </p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="ادخل رقم الحساب هنا او رقم الجوال او اسم المعلن...">
+                        <button type="submit">فحص</button>
+                    </form>
                 </div>
-                <div class="container">
-                    <div class="descripe-add">
-                        <input name="" id="" class="descripe-ad-input" placeholder="عنوان الاعلان" />
-                    </div>
-                </div>
-                <div class="ad-details">
-                    <div class="container">
-                        <textarea name="" id="" cols="30" rows="6" placeholder="تفاصيل الاعلان"></textarea>
-                        <div class="form-group form-select">
-                            <label for="exampleFormControlSelect1">ما هي الفئة المنسبة لمنتجك؟</label>
-                            <i class="fas fa-calendar"></i>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                <option selected disapled></i>اختر الفئة</option>
-                <option>2</option>
-              </select>
-                        </div>
-                        <input class="input-number" type="text" name="" id="" /><span>ريال</span>
-                        <ul class="list-unstyled ul-types">
-                            <li>
-                                <label class="container">
-                  <span class="type-word"><i class="fas fa-comment"></i>مراسلة</span>
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                            </li>
-                            <li>
-                                <label class="container">
-                  <span class="type-word"><i class="fab fa-whatsapp"></i>واتساب</span>
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                            </li>
-                            <li>
-                                <label class="container">
-                  <span class="type-word"><i class="fas fa-mobile"></i>اتصال</span>
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="button-submit">
-                    <button class="btn btn-submit-form" type="submit">نشر</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
-    <!-- end uplad ads -->
 
     <!-- start footer -->
     <footer class="pt-5 mt-5">
@@ -182,10 +151,13 @@
     </footer>
     <!-- end footer -->
 
+
+
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap-ar.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
 </head>
@@ -31,9 +32,6 @@
                             <li>
                                 <a href="./ads-page.html" class="btn btn-add-ads">اضف اعلان جديد</a>
                             </li>
-                            <li class="eng">
-                                <a href="#">English</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -57,66 +55,32 @@
     </div>
     <!-- end path -->
 
-    <!-- start uplad ads -->
-    <div class="upload-ads">
+    <!-- start who us -->
+    <div class="who-us">
         <div class="container">
-            <form action="">
-                <div class="image-upload">
-                    <label class="file-upload" for="file-input">
-            <i class="fas fa-camera"></i>
-            <p id="file-name"></p>
-          </label><br />
-                    <input id="file-input" type="file" />
-                </div>
-                <div class="container">
-                    <div class="descripe-add">
-                        <input name="" id="" class="descripe-ad-input" placeholder="عنوان الاعلان" />
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <div>
+                        <h5 class="who-header">مـــــــن نـحن :</h5>
+                        <p>
+                            <span class="big-word"> موقع راهن للتسويق الإلكتروني</span> وضع لحماية وحفظ حقوق كل من (
+                            <apan class="big-word">موقع راهن للتسويق الإلكتروني</apan>) و (
+                            <span>المستخدم</span> الذي يصل إلى الموقع بتسجيل او من دون تسجيل)أو ( العميل المستفيد من الإعلانات بتسجيل أو من دون تسجيل).
+                            <p>
+                                تم إنشاء الاتفاقية بناء على نظام التعاملات الإلكترونية. تخضع البنود والشروط والأحكام والمنازعات القانونية للقوانين والتشريعات والأنظمة المعمول بها في المملكة العربية السعودية.
+                            </p>
+                            <p>
+                                لكونك مستخدم فإنك توافق على الالتزام بكل ما يرد بهذه الاتفاقية في حال استخدامك للموقع او في حال الوصول اليه او في حالة التسجيل في الخدمة. يحق لموقع الحراج الجديد التعديل على هذه الاتفاقية في أي وقت وتعتبر ملزمة لجميع الأطراف بعد الإعلان عن التحديث في
+                                الموقع أو في أي وسيلة آخرى.
+                            </p>
+                        </p>
                     </div>
                 </div>
-                <div class="ad-details">
-                    <div class="container">
-                        <textarea name="" id="" cols="30" rows="6" placeholder="تفاصيل الاعلان"></textarea>
-                        <div class="form-group form-select">
-                            <label for="exampleFormControlSelect1">ما هي الفئة المنسبة لمنتجك؟</label>
-                            <i class="fas fa-calendar"></i>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                <option selected disapled></i>اختر الفئة</option>
-                <option>2</option>
-              </select>
-                        </div>
-                        <input class="input-number" type="text" name="" id="" /><span>ريال</span>
-                        <ul class="list-unstyled ul-types">
-                            <li>
-                                <label class="container">
-                  <span class="type-word"><i class="fas fa-comment"></i>مراسلة</span>
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                            </li>
-                            <li>
-                                <label class="container">
-                  <span class="type-word"><i class="fab fa-whatsapp"></i>واتساب</span>
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                            </li>
-                            <li>
-                                <label class="container">
-                  <span class="type-word"><i class="fas fa-mobile"></i>اتصال</span>
-                  <input type="checkbox" checked="checked" />
-                  <span class="checkmark"></span>
-                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="button-submit">
-                    <button class="btn btn-submit-form" type="submit">نشر</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
-    <!-- end uplad ads -->
+    <!-- end who us -->
+
 
     <!-- start footer -->
     <footer class="pt-5 mt-5">
@@ -156,14 +120,10 @@
                             <button>اشترك الان</button>
                         </form>
                         <div class="social">
-                            <span><a href="#"><i class="fab fa-instagram"></i></a
-              ></span>
-                            <span><a href="#"><i class="fab fa-snapchat"></i></a
-              ></span>
-                            <span><a href="#"><i class="fab fa-twitter"></i></a
-              ></span>
-                            <span><a href="#"><i class="fas  fa-envelope"></i></a
-              ></span>
+                            <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+                            <span><a href="#"><i class="fab fa-snapchat"></i></a></span>
+                            <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                            <span><a href="#"><i class="fas  fa-envelope"></i></a></span>
                         </div>
                     </div>
                 </div>
@@ -186,6 +146,7 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

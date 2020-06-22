@@ -110,7 +110,7 @@ body {
 }
 .upper-nav .login ul li .btn-add-ads:hover {
   background-image: linear-gradient(to left, #fff, #fff);
-  border: 2px solid #d12d4a;
+  border: 1px solid #d12d4a;
   color: #d12d4a;
 }
 .upper-nav .login ul li:last-child {
@@ -118,18 +118,28 @@ body {
 }
 .upper-nav .eng {
   border-right: 1px solid #ddd;
+  padding: 0 !important;
+  padding-right: 10px !important;
+  margin-left: 20px;
 }
 .upper-nav .eng a {
   color: #000;
   text-decoration: none;
 }
-.upper-nav .my-account-option {
-  border-right: 2px solid #d12d4a !important;
-  width: 100%;
-  text-align: right;
+.upper-nav .btn-my-account {
+  background-color: #0a6186;
+  color: #fff !important;
+  border: 1px solid #0a6186 !important;
 }
-.upper-nav .my-account-option .form-group {
-  margin-bottom: 0;
+.upper-nav .btn-my-account:hover {
+  background-color: #fff !important;
+  color: #0a6186 !important;
+}
+.upper-nav .btn-my-account:hover i {
+  color: #0a6186 !important;
+}
+.upper-nav .btn-my-account i {
+  color: #fff !important;
 }
 
 .header-img {
@@ -195,11 +205,11 @@ body {
   margin: auto;
 }
 .slider-card .swiper-wrapper {
-  width: 85% !important;
+  width: 88% !important;
   margin: auto;
 }
 .slider-card .swiper-slide {
-  width: 200px !important;
+  width: 202px !important;
   margin: auto;
   text-align: center;
   /* Center slide text vertically */
@@ -241,26 +251,29 @@ body {
   z-index: 99;
 }
 .slider-card .swiper-button-next {
-  left: auto !important;
+  left: 0 !important;
   margin-right: 10px;
 }
 .slider-card .swiper-button-next:focus {
   outline: 0 !important;
 }
 .slider-card .swiper-button-prev {
-  display: none;
+  right: 0 !important;
+}
+.slider-card .swiper-button-prev:focus {
+  outline: 0 !important;
 }
 .slider-card .swiper-button-next:after {
   font-family: "Font Awesome 5 Free";
-  content: "" !important;
+  content: "" !important;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 30px;
 }
 .slider-card .swiper-button-prev:after {
   font-family: "Font Awesome 5 Free";
   content: "" !important;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .ads {
@@ -279,6 +292,14 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
   border: 0 !important;
   margin-top: 30px !important;
+  position: relative;
+}
+.ads .card .verfiy {
+  position: absolute;
+  color: #339AF0;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
 }
 .ads .card img {
   width: 300px;
@@ -562,6 +583,9 @@ body {
 .show-add-section {
   margin-top: 90px;
 }
+.show-add-section .verfiy {
+  color: #4f94e2;
+}
 .show-add-section .add-header {
   margin-bottom: 20px;
   position: relative;
@@ -609,7 +633,7 @@ body {
   border: 0 !important;
 }
 .show-add-section .add-information .table td span:first-child {
-  color: #555;
+  color: #000;
 }
 .show-add-section .add-information .table-striped tbody tr:nth-of-type(odd) {
   background-color: #f7f7f7 !important;
@@ -729,6 +753,18 @@ body {
 .agent-section-tabs .v-tabs-right-choses {
   border: 1px solid #f8f8f8;
   margin-bottom: 20px;
+}
+.agent-section-tabs .v-tabs-right-choses .msg-number {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #d12d4a;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #fff;
 }
 .agent-section-tabs .v-tabs-right-choses .nav-link {
   border: 1px solid #f8f8f8;

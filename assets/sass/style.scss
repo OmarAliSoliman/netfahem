@@ -130,7 +130,7 @@ body {
           color: #fff;
           &:hover {
             background-image: linear-gradient(to left, #fff, #fff);
-            border: 2px solid $mainColor;
+            border: 1px solid $mainColor;
             color: $mainColor;
           }
         }
@@ -142,19 +142,37 @@ body {
   }
   .eng{
     border-right: 1px solid #ddd;
+    padding: 0 !important;
+    padding-right: 10px !important;
+    margin-left: 20px;
     a{
       color: #000;
       text-decoration: none;
     }
   }
-  .my-account-option{
-    border-right: 2px solid $mainColor !important;
-    width: 100%;
-    text-align: right;
-    .form-group{
-      margin-bottom: 0;
+  .btn-my-account{
+    background-color: #0a6186;
+    color: #fff !important;
+    border: 1px solid #0a6186 !important;
+    &:hover{
+      background-color: #fff !important;
+      color: #0a6186 !important;
+      i{
+        color: #0a6186 !important;
+      }
+    }
+    i{
+      color: #fff !important;
     }
   }
+  // .my-account-option{
+  //   border-right: 2px solid $mainColor !important;
+  //   width: 100%;
+  //   text-align: right;
+  //   .form-group{
+  //     margin-bottom: 0;
+  //   }
+  // }
 }
 
 // start header img
@@ -222,11 +240,11 @@ body {
     margin: auto;
   }
   .swiper-wrapper {
-    width: 85% !important;
+    width: 88% !important;
     margin: auto;
   }
   .swiper-slide {
-    width: 200px !important;
+    width: 202px !important;
     margin: auto;
     text-align: center;
     /* Center slide text vertically */
@@ -268,26 +286,30 @@ body {
     z-index: 99;
   }
   .swiper-button-next {
-    left: auto !important;
+    left: 0 !important;
     margin-right: 10px;
     &:focus {
       outline: 0 !important;
     }
   }
   .swiper-button-prev {
-    display: none;
+    right: 0 !important;
+    // margin-right: 10px;
+    &:focus {
+      outline: 0 !important;
+    }
   }
   .swiper-button-next:after {
     font-family: "Font Awesome 5 Free";
-    content: "\f35a" !important;
+    content: "\f359" !important;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
   }
   .swiper-button-prev:after {
     font-family: "Font Awesome 5 Free";
     content: "\f35a" !important;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -307,6 +329,14 @@ body {
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
     border: 0 !important;
     margin-top: 30px !important;
+    position: relative;
+    .verfiy{
+      position: absolute;
+      color: #339AF0;
+      z-index: 2;
+      top: 10px;
+      left: 10px;
+    }
     img {
       width: 300px;
       height: 200px;
@@ -611,6 +641,9 @@ body {
 // start add page
 .show-add-section {
   margin-top: 90px;
+  .verfiy{
+    color: #4f94e2;
+  }
   .add-header {
     margin-bottom: 20px;
     position: relative;
@@ -659,7 +692,7 @@ body {
       td {
         border: 0 !important;
         span:first-child {
-          color: #555;
+          color: #000;
         }
       }
     }
@@ -784,6 +817,18 @@ body {
   }
   margin-top: 90px;
   .v-tabs-right-choses {
+    .msg-number{
+      display:inline-block;
+      text-align: center;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      background-color: $mainColor;
+      margin-right: 10px;
+      font-size: 12px;
+      color: #fff
+    }
     border: 1px solid #f8f8f8;
     margin-bottom: 20px;
     .nav-link {

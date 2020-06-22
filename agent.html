@@ -2,764 +2,777 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap-ar.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap-ar.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Document</title>
 </head>
 
 <body>
-    <!-- start navbar -->
-    <div class="upper-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 text-right">
-                    <div class="logo">
-                        <img class="mt-2" src="./assets/images/logo.png" alt="" />
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-6 text-right">
-                    <div class="login">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="./account.html" class="btn btn-login"><i class="fas fa-user"></i>تسجيل الدخول</a>
-                                <a href="./account.html" class="btn btn-rigister"><i class="fas fa-plus"></i>تسجيل جديد</a>
-                            </li>
-                            <li>
-                                <a href="./ads-page.html" class="btn btn-add-ads">اضف اعلان جديد</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- start navbar -->
+  <div class="upper-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 text-right">
+          <div class="logo">
+            <img class="mt-2" src="./assets/images/logo.png" alt="" />
+          </div>
         </div>
-    </div>
-    <!-- end navbar -->
-
-    <!-- start path  -->
-    <div class="path">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-12">
-                    <div>
-                        <span class="first"> <a href="#">الرئيسية</a></span>
-                        <span><a href="#">اسم القسم او الصفحة</a> </span>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-12 col-lg-6 text-right">
+          <div class="login">
+            <ul class="list-unstyled">
+              <li>
+                <a href="./account.html" class="btn btn-login"><i class="fas fa-user"></i>تسجيل الدخول</a>
+                <a href="./account.html" class="btn btn-rigister"><i class="fas fa-plus"></i>تسجيل جديد</a>
+              </li>
+              <li>
+                <a href="./ads-page.html" class="btn btn-add-ads">اضف اعلان جديد</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- end path -->
+  </div>
+  <!-- end navbar -->
 
-    <div class="agent-section-tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-3">
-                    <div class="nav v-tabs-right-choses flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#my-ads" role="tab" aria-controls="v-pills-home" aria-selected="true">اعلاناتي</a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#msg" role="tab" aria-controls="v-pills-profile" aria-selected="false">الرسائل</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#notification" role="tab" aria-controls="v-pills-messages" aria-selected="false">الاشعارات</a>
-                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">الاعدادات</a>
-                    </div>
+  <!-- start path  -->
+  <div class="path">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12">
+          <div>
+            <span class="first"> <a href="#">الرئيسية</a></span>
+            <span><a href="#">اسم القسم او الصفحة</a> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end path -->
+
+  <div class="agent-section-tabs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-3">
+          <div class="nav v-tabs-right-choses flex-column nav-pills" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#my-ads" role="tab"
+              aria-controls="v-pills-home" aria-selected="true">اعلاناتي</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#msg" role="tab"
+              aria-controls="v-pills-profile" aria-selected="false">الرسائل<span class="msg-number">3</span></a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#notification" role="tab"
+              aria-controls="v-pills-messages" aria-selected="false">الاشعارات</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#settings" role="tab"
+              aria-controls="v-pills-settings" aria-selected="false">الاعدادات</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="my-ads" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="my-ads-card">
+                <div class="container">
+                  <h6 class="my-ads-header">اعلاناتي</h6>
                 </div>
-                <div class="col-sm-12 col-lg-9">
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="my-ads" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <div class="my-ads-card">
-                                <div class="container">
-                                    <h6 class="my-ads-header">اعلاناتي</h6>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 col-lg-6">
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                    </div>
-                                    <div class="col-sm-12 col-lg-6">
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/add-image.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/add-image.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/add-image.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                        <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                    <a href="#">
-                                                        <img src="./assets/images/add-image.jpg" width="100%" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="container">
-                                                        <div class="card-body">
-                                                            <a href="#">
-                                                                <h5 class="card-title" data-aos="zoom-in">
-                                                                    فيلا 3 طوابق
-                                                                </h5>
-                                                            </a>
-                                                            <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
-                                  class="fas fa-clock"></i></span>
-                                                            <h4 class="price">
-                                                                <span>ريال</span><span class="price-number">130.000</span>
-                                                            </h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- reabeat -->
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row">
+                  <div class="col-sm-12 col-lg-6">
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
+                          </a>
                         </div>
-                        <div class="tab-pane fade" id="msg" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <div class="container">
-                                <h6 class="my-ads-header">الرسائل</h6>
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
                             </div>
-                            <div class="msgs">
-                                <div class="row">
-                                    <div class="col-sm-12 col-lg-12">
-                                        <div class="card">
-                                            <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                            <span class="msg-time">منذ 5 دقائق</span>
-                                        </div>
-                                    </div>
-                                    <!-- rebeat -->
-                                    <div class="col-sm-12 col-lg-12">
-                                        <div class="card">
-                                            <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                            <span class="msg-time">منذ 5 دقائق</span>
-                                        </div>
-                                    </div>
-                                    <!-- rebeat -->
-                                    <div class="col-sm-12 col-lg-12">
-                                        <div class="card">
-                                            <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                            <span class="msg-time">منذ 5 دقائق</span>
-                                        </div>
-                                    </div>
-                                    <!-- rebeat -->
-                                    <div class="col-sm-12 col-lg-12">
-                                        <div class="card">
-                                            <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                            <span class="msg-time">منذ 5 دقائق</span>
-                                        </div>
-                                    </div>
-                                    <!-- rebeat -->
-                                    <div class="col-sm-12 col-lg-12">
-                                        <div class="card">
-                                            <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                            <span class="msg-time">منذ 5 دقائق</span>
-                                        </div>
-                                    </div>
-                                    <!-- rebeat -->
-                                </div>
-                            </div>
+                          </div>
                         </div>
-                        <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <div class="container">
-                                <h6 class="my-ads-header mb-5">الاشعارات</h6>
-                            </div>
-                            <ul class="nav nav-orders-tabs nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#notification-orders" role="tab" aria-controls="pills-home" aria-selected="true">طلبات</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#notification-comments" role="tab" aria-controls="pills-profile" aria-selected="false">تعليقات</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="notification-orders" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <div class="orders-tab mt-5">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="notification-comments" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    <div class="comment-tabs mt-5">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                            <div class="col-sm-12 col-lg-12">
-                                                <div class="card">
-                                                    <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
-                                                    <span class="msg-time">منذ 5 دقائق</span>
-                                                </div>
-                                            </div>
-                                            <!-- rebeat -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
+                          </a>
                         </div>
-                        <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                            <ul class="nav nav-settings-tab nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#profile-setting" role="tab" aria-controls="pills-home" aria-selected="true">اعدادات البروفايل</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#send-order" role="tab" aria-controls="pills-profile" aria-selected="false">ارسال الطلب</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#take-order" role="tab" aria-controls="pills-contact" aria-selected="false">استلام الطلبات</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#verfication-accoutn" role="tab" aria-controls="pills-contact" aria-selected="false">توثيق الحساب</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="profile-setting" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <div class="profile-setting-information">
-                                        <h6 class="mb-4 mt-5">اعدادات البروفايل</h6>
-                                        <div class="card-setting">
-                                            <span class="name">الاسم</span>
-                                            <span class="name-result">عمر علي</span>
-                                        </div>
-                                        <div class="card-setting">
-                                            <span class="name">الايميل</span>
-                                            <span class="name-result">omar.ali.alasmar@gmail.com</span>
-                                        </div>
-                                        <div class="card-setting">
-                                            <span class="name">رقم الهاتف</span>
-                                            <span class="name-result">01098586783</span>
-                                        </div>
-                                        <div class="change-pass">
-                                            <a href="">تغيير كلمة السر</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="send-order" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    <h6 class="mb-4 mt-5">ارسال الطلب</h6>
-                                    <div class="order-type">
-                                        <form action="">
-                                            <div class="select-type-order">
-                                                <span>نوع الطلب</span>
-                                                <select class="my-form-control">
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/car-ads.jpg" width="100%" alt="" />
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                  </div>
+                  <div class="col-sm-12 col-lg-6">
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/add-image.jpg" width="100%" alt="" />
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/add-image.jpg" width="100%" alt="" />
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/add-image.jpg" width="100%" alt="" />
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                    <div class="card card-grow mt-2" style="max-width: 100%;" data-aos="fade-in">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <a href="#">
+                            <img src="./assets/images/add-image.jpg" width="100%" alt="" />
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="container">
+                            <div class="card-body">
+                              <a href="#">
+                                <h5 class="card-title" data-aos="zoom-in">
+                                  فيلا 3 طوابق
+                                </h5>
+                              </a>
+                              <span>المدينة<i class="fas fa-map-marker-alt"></i></span><span>قبل 3 ساعات<i
+                                  class="fas fa-clock"></i></span>
+                              <h4 class="price">
+                                <span>ريال</span><span class="price-number">130.000</span>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reabeat -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="msg" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="container">
+                <h6 class="my-ads-header">الرسائل</h6>
+              </div>
+              <div class="msgs">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-12">
+                    <div class="card">
+                      <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                      <span class="msg-time">منذ 5 دقائق</span>
+                    </div>
+                  </div>
+                  <!-- rebeat -->
+                  <div class="col-sm-12 col-lg-12">
+                    <div class="card">
+                      <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                      <span class="msg-time">منذ 5 دقائق</span>
+                    </div>
+                  </div>
+                  <!-- rebeat -->
+                  <div class="col-sm-12 col-lg-12">
+                    <div class="card">
+                      <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                      <span class="msg-time">منذ 5 دقائق</span>
+                    </div>
+                  </div>
+                  <!-- rebeat -->
+                  <div class="col-sm-12 col-lg-12">
+                    <div class="card">
+                      <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                      <span class="msg-time">منذ 5 دقائق</span>
+                    </div>
+                  </div>
+                  <!-- rebeat -->
+                  <div class="col-sm-12 col-lg-12">
+                    <div class="card">
+                      <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                      <span class="msg-time">منذ 5 دقائق</span>
+                    </div>
+                  </div>
+                  <!-- rebeat -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="container">
+                <h6 class="my-ads-header mb-5">الاشعارات</h6>
+              </div>
+              <ul class="nav nav-orders-tabs nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#notification-orders"
+                    role="tab" aria-controls="pills-home" aria-selected="true">طلبات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#notification-comments" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">تعليقات</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="notification-orders" role="tabpanel"
+                  aria-labelledby="pills-home-tab">
+                  <div class="orders-tab mt-5">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="notification-comments" role="tabpanel"
+                  aria-labelledby="pills-profile-tab">
+                  <div class="comment-tabs mt-5">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                          <p class="msg-words">نص تجريبي قابل للتعديل نص وهمي يظهر حسب الرسائل</p>
+                          <span class="msg-time">منذ 5 دقائق</span>
+                        </div>
+                      </div>
+                      <!-- rebeat -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <ul class="nav nav-settings-tab nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#profile-setting" role="tab"
+                    aria-controls="pills-home" aria-selected="true">اعدادات البروفايل</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#send-order" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">ارسال الطلب</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#take-order" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">استلام الطلبات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#verfication-accoutn" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">توثيق الحساب</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="profile-setting" role="tabpanel"
+                  aria-labelledby="pills-home-tab">
+                  <div class="profile-setting-information">
+                    <h6 class="mb-4 mt-5">اعدادات البروفايل</h6>
+                    <div class="card-setting">
+                      <span class="name">الاسم</span>
+                      <span class="name-result">عمر علي</span>
+                    </div>
+                    <div class="card-setting">
+                      <span class="name">الايميل</span>
+                      <span class="name-result">omar.ali.alasmar@gmail.com</span>
+                    </div>
+                    <div class="card-setting">
+                      <span class="name">رقم الهاتف</span>
+                      <span class="name-result">01098586783</span>
+                    </div>
+                    <div class="change-pass">
+                      <a href="">تغيير كلمة السر</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="send-order" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <h6 class="mb-4 mt-5">ارسال الطلب</h6>
+                  <div class="order-type">
+                    <form action="">
+                      <div class="select-type-order">
+                        <span>نوع الطلب</span>
+                        <select class="my-form-control">
                           <option>عقارات</option>
                         </select>
-                                            </div>
-                                            <div class="spans-type-cheack">
-                                                <span class="active">فيلا</span>
-                                                <span>فيلا</span>
-                                                <span>شقة</span>
-                                            </div>
-                                            <div class="city-type-select">
-                                                <span>المدينة</span>
-                                                <select class="my-form-control">
+                      </div>
+                      <div class="spans-type-cheack">
+                        <span class="active">فيلا</span>
+                        <span>فيلا</span>
+                        <span>شقة</span>
+                      </div>
+                      <div class="city-type-select">
+                        <span>المدينة</span>
+                        <select class="my-form-control">
                           <option>جدة</option>
                         </select>
-                                            </div>
-                                            <div class="order-price">
-                                                <span>السعر</span>
-                                                <input class="my-form-control" type="text" value="1000" />
-                                            </div>
-                                            <div class="more-detils">
-                                                <h6>تفاصيل اكثر</h6>
-                                                <textarea name="" id=""></textarea>
-                                                <div class="custom-file">
-                                                    <div class="image-upload ">
-                                                        <label class="file-upload" for="file-input">
+                      </div>
+                      <div class="order-price">
+                        <span>السعر</span>
+                        <input class="my-form-control" type="text" value="1000" />
+                      </div>
+                      <div class="more-detils">
+                        <h6>تفاصيل اكثر</h6>
+                        <textarea name="" id=""></textarea>
+                        <div class="custom-file">
+                          <div class="image-upload ">
+                            <label class="file-upload" for="file-input">
                               <span>رفع صور</span><i class="fas fa-image"></i>
                             </label><br />
-                                                        <input id="file-input" type="file" multiple="multiple" accept="image/*" />
-                                                        <p id="number-file"></p>
-                                                        <p id="file-name"></p>
-                                                        <span id="delete-file"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cheack-types">
-                                                <ul class="list-unstyled ul-types">
-                                                    <li>
-                                                        <label class="container">
+                            <input id="file-input" type="file" multiple="multiple" accept="image/*" />
+                            <p id="number-file"></p>
+                            <p id="file-name"></p>
+                            <span id="delete-file"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cheack-types">
+                        <ul class="list-unstyled ul-types">
+                          <li>
+                            <label class="container">
                               <span class="type-word"><i class="fas fa-comment"></i>مراسلة</span>
                               <input type="checkbox" checked="checked" />
                               <span class="checkmark"></span>
                             </label>
-                                                    </li>
-                                                    <li>
-                                                        <label class="container">
+                          </li>
+                          <li>
+                            <label class="container">
                               <span class="type-word"><i class="fab fa-whatsapp"></i>واتساب</span>
                               <input type="checkbox" checked="checked" />
                               <span class="checkmark"></span>
                             </label>
-                                                    </li>
-                                                    <li>
-                                                        <label class="container">
+                          </li>
+                          <li>
+                            <label class="container">
                               <span class="type-word"><i class="fas fa-mobile"></i>اتصال</span>
                               <input type="checkbox" checked="checked" />
                               <span class="checkmark"></span>
                             </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="button-submit">
-                                                <button class="btn btn-submit-form" type="submit">نشر</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="take-order" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                    <div class="take-order-tabs">
-                                        <h6 class="mt-4 mb-5">نوع الطلبات التي ترغب في استقبالها</h6>
-                                        <form action="">
-                                            <div class="select-type-take">
-                                                <select name="" id="">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="button-submit">
+                        <button class="btn btn-submit-form" type="submit">نشر</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="take-order" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <div class="take-order-tabs">
+                    <h6 class="mt-4 mb-5">نوع الطلبات التي ترغب في استقبالها</h6>
+                    <form action="">
+                      <div class="select-type-take">
+                        <select name="" id="">
                           <option disabled selected>عقارات</option>
                         </select>
-                                            </div>
-                                            <div class="boxes-cheack">
-                                                <label class="container">
+                      </div>
+                      <div class="boxes-cheack">
+                        <label class="container">
                           <span class="type-word">فيلا</span>
                           <input type="checkbox" checked="checked" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">فيلا</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">فيلا</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                            </div>
-                                            <div class="boxes-cheack mt-3">
-                                                <label class="container">
+                      </div>
+                      <div class="boxes-cheack mt-3">
+                        <label class="container">
                           <span class="type-word">فيلا</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">فيلا</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">فيلا</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                            </div>
-                                        </form>
-                                        <form action="" class="form2">
-                                            <div class="select-type-take">
-                                                <select name="" id="">
+                      </div>
+                    </form>
+                    <form action="" class="form2">
+                      <div class="select-type-take">
+                        <select name="" id="">
                           <option disabled selected>اختر المدينة</option>
                         </select>
-                                            </div>
-                                            <div class="boxes-cheack">
-                                                <label class="container">
+                      </div>
+                      <div class="boxes-cheack">
+                        <label class="container">
                           <span class="type-word">جدة</span>
                           <input type="checkbox" checked="checked" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">الطائف</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">المدينة</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                            </div>
-                                            <div class="boxes-cheack mt-3">
-                                                <label class="container">
+                      </div>
+                      <div class="boxes-cheack mt-3">
+                        <label class="container">
                           <span class="type-word">الرياض</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">جدة</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                                <label class="container">
+                        <label class="container">
                           <span class="type-word">المدينة</span>
                           <input type="checkbox" />
                           <span class="checkmark"></span>
                         </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="verfication-accoutn" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                    <div class="verfication-div">
-                                        <h6>على ماذا سيحصل العميل مقابل الدفع</h6>
-                                        <ul class="list-unstyled">
-                                            <li>يحصل على علامة <i class="fas fa-check-circle"></i> يكون بجوار الاسم وفي صورة الاعلان من الخارج.</li>
-                                            <li>يستطيع إضافة عدد 10 صور بدلاً من عدد 5 صور.</li>
-                                            <li>يستطيع إغلاق الردود على التعلقات.</li>
-                                        </ul>
-                                        <form action="">
-                                            <div class="quta">
-                                                <h6>باقات الحساب الموثق</h6>
-                                                <span class="quta-span">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="verfication-accoutn" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <div class="verfication-div">
+                    <h6>على ماذا سيحصل العميل مقابل الدفع</h6>
+                    <ul class="list-unstyled">
+                      <li>يحصل على علامة <i class="fas fa-check-circle"></i> يكون بجوار الاسم وفي صورة الاعلان من
+                        الخارج.</li>
+                      <li>يستطيع إضافة عدد 10 صور بدلاً من عدد 5 صور.</li>
+                      <li>يستطيع إغلاق الردود على التعلقات.</li>
+                    </ul>
+                    <form action="">
+                      <div class="quta">
+                        <h6>باقات الحساب الموثق</h6>
+                        <span class="quta-span">
                           <p>لمدة 6 شهور</p>
                           <h5>300</h5>
                           <h6>ريــــــــــــــال</h6>
                         </span>
-                                                <span class="quta-span active">
+                        <span class="quta-span active">
                           <p>لمدة سنة</p>
                           <h5>600</h5>
                           <h6>ريــــــــــــــال</h6>
                         </span>
-                                            </div>
-                                            <div class="prototype-send">
-                                                <h6>نموذج ارسال حوالة</h6>
-                                                <div>
-                                                    <input class="my-input-proto" type="text" name="" id="" placeholder="اسم صاحب الحساب">
-                                                    <input class="my-input-proto" type="text" name="" id="" placeholder="رقم الحساب">
-                                                </div>
-                                                <div>
-                                                    <input class="my-input-proto" type="text" name="" id="" placeholder="حالة الدفع">
-                                                    <input class="my-input-proto" type="text" name="" id="" placeholder="ملاحظات">
-                                                </div>
-                                                <div class="image-upload ">
-                                                    <label class="file-upload" for="file-input-proto">
+                      </div>
+                      <div class="prototype-send">
+                        <h6>نموذج ارسال حوالة</h6>
+                        <div>
+                          <input class="my-input-proto" type="text" name="" id="" placeholder="اسم صاحب الحساب">
+                          <input class="my-input-proto" type="text" name="" id="" placeholder="رقم الحساب">
+                        </div>
+                        <div>
+                          <input class="my-input-proto" type="text" name="" id="" placeholder="حالة الدفع">
+                          <input class="my-input-proto" type="text" name="" id="" placeholder="ملاحظات">
+                        </div>
+                        <div class="image-upload ">
+                          <label class="file-upload" for="file-input-proto">
                             <span>رفع صور</span><i class="fas fa-image"></i>
                           </label><br />
-                                                    <input id="file-input-proto" type="file" accept="image/*" />
-                                                    <p id="file-name-proto"></p>
-                                                </div>
-                                            </div>
-                                            <div class="button-submit">
-                                                <button class="btn btn-submit-form" type="submit">نشر</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                          <input id="file-input-proto" type="file" accept="image/*" />
+                          <p id="file-name-proto"></p>
                         </div>
-                    </div>
+                      </div>
+                      <div class="button-submit">
+                        <button class="btn btn-submit-form" type="submit">نشر</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- start footer -->
-    <footer class="pt-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-4">
-                    <div class="logo-content-logo">
-                        <div class="logo mb-3" data-aos="fade-up">
-                            <img src="./assets/images/logo-footer.png" alt="" />
-                        </div>
-                        <p class="text-white">
-                            مع ارتفاع أسعار تصميم مواقع الإنترنت بشكل مٌبالغ فيه أصبحت معظم الشركات والمؤسسات الناشئة والصغير في البحث عن قالب شركة مميز يعبر عما تقدمه من خدمات بشكل راقي ويكون بسعر مناسب، (فنون المسلم) تقدم تصميم قوالب شركات احترافية، نحن نعلم أهمية أن يكون
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="help-content">
-                        <h5 class="text-white pr-3">روابط اخرى</h5>
-                        <ul class="text-white">
-                            <li><a class="text-white" href="./contact.htm">اتصل بنا</a></li>
-                            <li><a class="text-white" href="">اتفاقية الاستخدام</a></li>
-                            <li>
-                                <a class="text-white" href="./archive.html">سياسة المحتوى</a>
-                            </li>
-                            <li>
-                                <a class="text-white" href="./ads-page.html">اضف اعلانك</a>
-                            </li>
-                            <li><a class="text-white" href="">حسابي</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="social-content">
-                        <h5 class="text-white">اشترك في قائمتنا البريدية</h5>
-                        <form>
-                            <input type="email" placeholder="بريدك الالكتروني هنا" /><br />
-                            <button>اشترك الان</button>
-                        </form>
-                        <div class="social">
-                            <span><a href="#"><i class="fab fa-instagram"></i></a
-              ></span>
-                            <span><a href="#"><i class="fab fa-snapchat"></i></a
-              ></span>
-                            <span><a href="#"><i class="fab fa-twitter"></i></a
-              ></span>
-                            <span><a href="#"><i class="fas  fa-envelope"></i></a
-              ></span>
-                        </div>
-                    </div>
-                </div>
+  <!-- start footer -->
+  <footer class="pt-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <div class="logo-content-logo">
+            <div class="logo mb-3" data-aos="fade-up">
+              <img src="./assets/images/logo-footer.png" alt="" />
             </div>
+            <p class="text-white">
+              مع ارتفاع أسعار تصميم مواقع الإنترنت بشكل مٌبالغ فيه أصبحت معظم الشركات والمؤسسات الناشئة والصغير في البحث
+              عن قالب شركة مميز يعبر عما تقدمه من خدمات بشكل راقي ويكون بسعر مناسب، (فنون المسلم) تقدم تصميم قوالب شركات
+              احترافية، نحن نعلم أهمية أن يكون
+            </p>
+          </div>
         </div>
-        <div class="copy">
-            <div class="container">
-                <h5 class="">جميع الحقوق محفوظه فنون المسلم 2020</h5>
-                <div class="logo-funun">
-                    <span class="text-white">تصميم وبرمجة</span>
-                    <img src="./assets/images/funun.png" />
-                </div>
-                <div class="clear"></div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="help-content">
+            <h5 class="text-white pr-3">روابط اخرى</h5>
+            <ul class="text-white">
+              <li><a class="text-white" href="./contact.htm">اتصل بنا</a></li>
+              <li><a class="text-white" href="">اتفاقية الاستخدام</a></li>
+              <li>
+                <a class="text-white" href="./archive.html">سياسة المحتوى</a>
+              </li>
+              <li>
+                <a class="text-white" href="./ads-page.html">اضف اعلانك</a>
+              </li>
+              <li><a class="text-white" href="">حسابي</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="social-content">
+            <h5 class="text-white">اشترك في قائمتنا البريدية</h5>
+            <form>
+              <input type="email" placeholder="بريدك الالكتروني هنا" /><br />
+              <button>اشترك الان</button>
+            </form>
+            <div class="social">
+              <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+              <span><a href="#"><i class="fab fa-snapchat"></i></a></span>
+              <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+              <span><a href="#"><i class="fas  fa-envelope"></i></a></span>
             </div>
+          </div>
         </div>
-    </footer>
-    <!-- end footer -->
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <h5 class="">جميع الحقوق محفوظه فنون المسلم 2020</h5>
+        <div class="logo-funun">
+          <span class="text-white">تصميم وبرمجة</span>
+          <img src="./assets/images/funun.png" />
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
 
-    <script src="./assets/js/jquery-3.3.1.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="./assets/js/file-upload.js"></script>
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="./assets/js/file-upload.js"></script>
 </body>
 
 </html>

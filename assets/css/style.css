@@ -14,7 +14,9 @@
   src: url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.eot");
   src: url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.woff") format("woff"), url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.ttf") format("truetype"), url("../fonts/DINNextLTArabic/DINNextLTArabic-Medium.svg#DINNextLTArabic-Medium") format("svg");
 }
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: 0 !important;
 }
 
@@ -199,37 +201,13 @@ body {
   height: 270px;
   text-align: center;
 }
-.slider-card .swiper-container {
-  width: 60%;
-  height: 100%;
-  margin: auto;
+.slider-card .slider-department-card .slider-item:focus {
+  outline: 0 !important;
 }
-.slider-card .swiper-wrapper {
-  width: 88% !important;
-  margin: auto;
-}
-.slider-card .swiper-slide {
-  width: 202px !important;
-  margin: auto;
-  text-align: center;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.slider-card a {
+.slider-card .slider-department-card a {
   text-decoration: none;
 }
-.slider-card .card {
+.slider-card .slider-department-card .card {
   text-align: center;
   width: 160px;
   height: 160px;
@@ -237,47 +215,68 @@ body {
   transition: all 0.5s ease-in-out;
   color: #000;
 }
-.slider-card .card:hover {
+.slider-card .slider-department-card .card:hover {
   background-color: #e9456b !important;
   color: #fff;
 }
-.slider-card .card img {
+.slider-card .slider-department-card .card img {
   width: 80px;
   margin: auto;
 }
-.slider-card .swiper-button-next,
-.slider-card .swiper-button-prev {
-  color: #772638;
+.slider-card .slider-department-card .slick-next {
+  right: 0;
+}
+.slider-card .slider-department-card .slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  content: "" !important;
+  font-weight: 900;
+  font-size: 30px;
+  z-index: 9;
+}
+.slider-card .slider-department-card .slick-prev {
+  left: 0;
   z-index: 99;
 }
-.slider-card .swiper-button-next {
-  left: 0 !important;
-  margin-right: 10px;
-}
-.slider-card .swiper-button-next:focus {
-  outline: 0 !important;
-}
-.slider-card .swiper-button-prev {
-  right: 0 !important;
-}
-.slider-card .swiper-button-prev:focus {
-  outline: 0 !important;
-}
-.slider-card .swiper-button-next:after {
+.slider-card .slider-department-card .slick-prev:before {
   font-family: "Font Awesome 5 Free";
   content: "" !important;
   font-weight: 900;
   font-size: 30px;
 }
-.slider-card .swiper-button-prev:after {
-  font-family: "Font Awesome 5 Free";
-  content: "" !important;
-  font-weight: 900;
-  font-size: 30px;
+
+.extra {
+  position: relative;
+  margin-top: -50px;
+}
+
+.extra-department {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  display: none;
+  white-space: nowrap;
+  width: 100%;
+  height: 90px;
+  overflow-x: scroll;
+  padding-top: 30px;
+  overflow-y: hidden;
+  border-radius: 5px;
+}
+.extra-department .close-extra-department {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #d12d4a;
+  cursor: pointer;
+}
+.extra-department ul li {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
 }
 
 .ads {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .ads .ads-header {
   background-color: #f5f5f5;
@@ -610,6 +609,19 @@ body {
 .show-add-section .add-image img {
   width: 100%;
   height: 400px;
+}
+.show-add-section .add-image .slider-top .item-slide {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.show-add-section .add-image .slider-bottom .item-slide {
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+.show-add-section .add-image .slider-bottom .item-slide:focus {
+  outline: 0 !important;
 }
 .show-add-section .add-information {
   border: 1px solid #f6f6f6;
@@ -1301,7 +1313,7 @@ body {
 }
 
 .department {
-  margin-top: 10px !important;
+  margin-top: 100px !important;
 }
 .department .load-more button {
   background-color: #761366;
@@ -1774,6 +1786,10 @@ footer .social-content button {
     width: 100% !important;
     margin-top: 5px;
     font-size: 15px;
+  }
+
+  .extra-department {
+    width: 90%;
   }
 
   .upload-ads form .form-select select {
